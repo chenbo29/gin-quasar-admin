@@ -5,13 +5,13 @@ log:
     maxBackups: 10
     maxAge: 7
 mysql:
-    host:
-    port:
-    user:
-    password:
-    database:
-    maxIdle: 0
-    maxOpen: 0
+    host: 47.116.213.145
+    port: 33806
+    user: quasar
+    password: quasarQpAlZm
+    database: share
+    maxIdle: 100
+    maxOpen: 100
 system:
     port: 8888
     successCode: 1

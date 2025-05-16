@@ -3,12 +3,13 @@ package boot
 import (
 	"fmt"
 	"github.com/Junvary/gin-quasar-admin/GQA-BACKEND/global"
+	"github.com/Junvary/gin-quasar-admin/GQA-BACKEND/model"
 	"gorm.io/gorm"
 	"os"
 )
 
 func Migrate(db *gorm.DB) {
-	err := db.AutoMigrate()
+	err := db.AutoMigrate(model.Models...)
 	if err != nil {
 		fmt.Println("Database migration failed!", err.Error())
 		global.GqaSLogger.Error("Database migration failed!", "err", err.Error())
