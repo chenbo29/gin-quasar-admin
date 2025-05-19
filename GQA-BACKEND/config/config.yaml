@@ -6,12 +6,12 @@ log:
     maxAge: 7
 mysql:
     host: 47.116.213.145
-    port: 33806
+    port: "33806"
     user: quasar
     password: quasarQpAlZm
-    database: share
-    maxIdle: 100
-    maxOpen: 100
+    database: quasar
+    maxIdle: 0
+    maxOpen: 0
 system:
     port: 8888
     successCode: 1
